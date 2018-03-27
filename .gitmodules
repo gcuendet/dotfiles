@@ -16,3 +16,6 @@
 [submodule ".vim/pack/gabriel/start/vim-snippets"]
 	path = .vim/pack/gabriel/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule ".tmux-config"]
+	path = .tmux-config
+	url = https://github.com/samoshkin/tmux-config.git
