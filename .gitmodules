@@ -1,0 +1,18 @@
+[submodule ".vim/pack/gabriel/start/ultisnips"]
+	path = .vim/pack/gabriel/start/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule ".vim/pack/gabriel/start/supertab"]
+	path = .vim/pack/gabriel/start/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule ".vim/pack/gabriel/start/vim-fugitive"]
+	path = .vim/pack/gabriel/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/pack/gabriel/start/vim-airline"]
+	path = .vim/pack/gabriel/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule ".vim/pack/gabriel/start/youcompleteme"]
+	path = .vim/pack/gabriel/start/youcompleteme
+	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule ".vim/pack/gabriel/start/vim-snippets"]
+	path = .vim/pack/gabriel/start/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
