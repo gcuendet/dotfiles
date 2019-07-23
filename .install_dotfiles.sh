@@ -15,8 +15,8 @@ config config status.showUntrackedFiles no
 
 # Install YouCompleteMe (needs to compile dependencies)
 # ---
+config submodule update --init --recursive
 cd ~/.vim/pack/gabriel/start/youcompleteme
-git submodule update --init
 ./install.py --clang-completer
 
 # Install powerline fonts (to use with tmux-config)
