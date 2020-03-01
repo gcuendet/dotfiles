@@ -19,3 +19,6 @@
 [submodule ".tmux-config"]
 	path = .tmux-config
 	url = https://github.com/samoshkin/tmux-config.git
+[submodule ".vim/pack/gabriel/start/nerdtree"]
+	path = .vim/pack/gabriel/start/nerdtree
+	url = git@github.com:preservim/nerdtree.git
