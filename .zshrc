@@ -1,8 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=/Users/gabriel/anaconda2/bin:$PATH
+
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/gabriel/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Macport install path
 export PATH=$PATH:/opt/local/bin
