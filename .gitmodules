@@ -22,3 +22,24 @@
 [submodule ".vim/pack/gabriel/start/nerdtree"]
 	path = .vim/pack/gabriel/start/nerdtree
 	url = git@github.com:preservim/nerdtree.git
+[submodule ".vim/pack/gabriel/start/splitjoin"]
+	path = .vim/pack/gabriel/start/splitjoin
+	url = https://github.com/AndrewRadev/splitjoin.vim
+[submodule ".vim/pack/gabriel/start/vim-commentary"]
+	path = .vim/pack/gabriel/start/vim-commentary
+	url = git@github.com:tpope/vim-commentary.git
+[submodule ".vim/pack/gabriel/start/vim-gitgutter"]
+	path = .vim/pack/gabriel/start/vim-gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git
+[submodule ".vim/pack/gabriel/start/tagbar"]
+	path = .vim/pack/gabriel/start/tagbar
+	url = git@github.com:majutsushi/tagbar.git
+[submodule ".vim/pack/gabriel/start/tabular"]
+	path = .vim/pack/gabriel/start/tabular
+	url = git@github.com:godlygeek/tabular.git
+[submodule ".vim/pack/gabriel/start/ctrlp"]
+	path = .vim/pack/gabriel/start/ctrlp
+	url = git@github.com:ctrlpvim/ctrlp.vim.git
+[submodule ".vim/pack/gabriel/start/synstastic"]
+	path = .vim/pack/gabriel/start/synstastic
+	url = https://github.com/vim-syntastic/syntastic.git

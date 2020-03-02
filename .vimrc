@@ -8,6 +8,9 @@ set ruler " Always show the cursor position.
 set number
 " set relativenumber " Show line numbers relative to cursor where cursor number is always zero.
 
+" OSX stupid backspace fix
+set backspace=indent,eol,start
+
 set expandtab " Use spaces instead of tabs when indenting.
 set smarttab " Indent instead of tabbing at the beginning of a line.
 set shiftwidth=4 " Indent by 2 spaces.
@@ -68,11 +71,14 @@ map <C-n> :NERDTreeToggle<CR>
 " Close VIM if NERDTree is the last opened window
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" TagBar settings
+map <C-m> :TagbarToggle<CR>
+
 " UltiSnips default folder
-let g:UltiSnipsSnippetDirectories = ['~/.vim/pack/cue/start/my-snippets', '../my-snippets', '~/.vim/pack/cue/start/vim-snippets', 'UltiSnips']
+let g:UltiSnipsSnippetDirectories = ['~/.vim/pack/gabriel/start/my-snippets', '../my-snippets', '~/.vim/pack/gabriel/start/vim-snippets', 'UltiSnips']
 
 "Youcompleteme fix
-let g:ycm_global_ycm_extra_conf = '~/.vim/pack/cue/start/youcompleteme/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py' 
+let g:ycm_global_ycm_extra_conf = '~/.vim/pack/gcuendet/start/youcompleteme/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py' 
 
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
