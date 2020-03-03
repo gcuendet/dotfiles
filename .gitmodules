@@ -43,3 +43,6 @@
 [submodule ".vim/pack/gabriel/start/synstastic"]
 	path = .vim/pack/gabriel/start/synstastic
 	url = https://github.com/vim-syntastic/syntastic.git
+[submodule ".vim/pack/gabriel/start/coc.nvim"]
+	path = .vim/pack/gabriel/start/coc.nvim
+	url = git@github.com:neoclide/coc.nvim.git
