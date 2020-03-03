@@ -7,6 +7,10 @@ export ZSH=$HOME/.oh-my-zsh
 # Macport install path
 export PATH=$PATH:/opt/local/bin
 
+# Pyenv virtualenv loading
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 # To manage dotfiles (INCLUDING this .bashrc) without accidentally using regular git in a working directory [https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/]
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
