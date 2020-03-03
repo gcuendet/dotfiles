@@ -10,9 +10,6 @@
 [submodule ".vim/pack/gabriel/start/vim-airline"]
 	path = .vim/pack/gabriel/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
-[submodule ".vim/pack/gabriel/start/youcompleteme"]
-	path = .vim/pack/gabriel/start/youcompleteme
-	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule ".vim/pack/gabriel/start/vim-snippets"]
 	path = .vim/pack/gabriel/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
@@ -40,9 +37,33 @@
 [submodule ".vim/pack/gabriel/start/ctrlp"]
 	path = .vim/pack/gabriel/start/ctrlp
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
-[submodule ".vim/pack/gabriel/start/synstastic"]
-	path = .vim/pack/gabriel/start/synstastic
-	url = https://github.com/vim-syntastic/syntastic.git
 [submodule ".vim/pack/gabriel/start/coc.nvim"]
 	path = .vim/pack/gabriel/start/coc.nvim
 	url = git@github.com:neoclide/coc.nvim.git
+[submodule ".vim/pack/gabriel/start/vim-tmux-navigator"]
+	path = .vim/pack/gabriel/start/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
+[submodule ".vim/pack/gabriel/start/vim-devicons"]
+	path = .vim/pack/gabriel/start/vim-devicons
+	url = git@github.com:ryanoasis/vim-devicons.git
+[submodule ".vim/pack/gabriel/start/nerdtree-git-plugin"]
+	path = .vim/pack/gabriel/start/nerdtree-git-plugin
+	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
+[submodule ".vim/pack/gabriel/start/vim-airline-themes"]
+	path = .vim/pack/gabriel/start/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git
+[submodule ".vim/pack/gabriel/start/vim-unimpaired"]
+	path = .vim/pack/gabriel/start/vim-unimpaired
+	url = git@github.com:tpope/vim-unimpaired.git
+[submodule ".vim/pack/gabriel/start/gruvbox"]
+	path = .vim/pack/gabriel/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
+[submodule ".vim/pack/gabriel/start/ale"]
+	path = .vim/pack/gabriel/start/ale
+	url = git@github.com:dense-analysis/ale.git
+[submodule ".vim/pack/gabriel/start/vim-grepper"]
+	path = .vim/pack/gabriel/start/vim-grepper
+	url = git@github.com:mhinz/vim-grepper.git
+[submodule ".vim/pack/gabriel/start/vim-autoformat"]
+	path = .vim/pack/gabriel/start/vim-autoformat
+	url = git@github.com:Chiel92/vim-autoformat.git

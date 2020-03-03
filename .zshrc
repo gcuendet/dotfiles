@@ -96,8 +96,11 @@ alias vimconfig="vim ~/.vimrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="/Applications/MacVim.app/Contents/bin/vim"
 alias ka="k -a"
-alias gs="git status"
+alias gs="clear && git status"
 
 alias rfb="rm -rf build/"
 alias mcb="mkdir build && cd build"
+
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 

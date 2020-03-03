@@ -38,10 +38,12 @@ filetype plugin indent on " Enable file type specific indentation.
 " Buffer configuration
 set hidden
 
+colorscheme gruvbox
+
 " Vim-Airline Configuration
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='hybrid'
+let g:airline_theme='dark_minimal'
 let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 1
 let g:airline_section_b = '%{strftime("%c")}'
@@ -49,7 +51,7 @@ let g:airline_section_y = 'BN: %{bufnr("%")}'
 
 " Delete trailing whitespaces when saving
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces
-autocmd FileType c,cpp,php,yaml autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,cpp,php,yaml,py autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " Auto-Commands
 autocmd FileType gitcommit setlocal spell " Enables spell checking for Git commits.
@@ -58,6 +60,102 @@ autocmd FileType markdown setlocal spell " Enables spell checking for Markdown f
 " Extensions
 " execute pathogen#infect()
 runtime macros/matchit.vim
+
+" Coc config
+let g:coc_global_extensions = [
+  \ 'coc-json',
+  \ 'coc-clangd',
+  \ 'coc-yaml',
+  \ 'coc-python',
+  \ 'coc-markdownlint',
+  \ ]
+
+" Some servers have issues with backup files, see #649.
+set nobackup
+set nowritebackup
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+set signcolumn=yes
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Use K to show documentation in preview window.
+ nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+    if (index(['vim','help'], &filetype) >= 0)
+        execute 'h '.expand('<cword>')
+    else
+        call CocAction('doHover')
+    endif
+endfunction
+
+" Highlight the symbol and its references when holding the
+" cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
+
+" Formatting selected code.
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+augroup mygroup
+    autocmd!
+    " Setup formatexpr specified filetype(s).
+    autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+    " Update signature help on jump placeholder.
+    autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
+
+" Applying codeAction to the selected region.
+" Example: `<leader>aap` for current paragraph
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" Remap keys for applying codeAction to the current line.
+nmap <leader>ac  <Plug>(coc-codeaction)
+" Apply AutoFix to problem on the current line.
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+" Mappings using CoCList:
+" Show all diagnostics.
+nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
+" Manage extensions.
+nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
+" Show commands.
+nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
+" Find symbol of current document.
+nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
+" Search workspace symbols.
+nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+" Do default action for next item.
+nnoremap <silent> <space>j  :<C-u>CocNext<CR>
+" Do default action for previous item.
+map <silent> <space>k  :<C-u>CocPrev<CR>
+" Resume latest coc list.
+map <silent> <space>p  :<C-u>CocListResume<CR>
+
+" Grepper config
+let g:grepper = {}
+let g:grepper.tools = ['rg', 'git']
+
+nmap gs  <plug>(GrepperOperator)
+xmap gs  <plug>(GrepperOperator)
 
 " NERDTree settings
 " NERDTree shows when opening vim without file or with a directory
@@ -101,4 +199,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" GoTo code navigation.
 
