@@ -39,6 +39,7 @@ filetype plugin indent on " Enable file type specific indentation.
 set hidden
 
 colorscheme gruvbox
+set bg=dark
 
 " Vim-Airline Configuration
 let g:airline#extensions#tabline#enabled = 1
@@ -168,6 +169,26 @@ let NERDTreeShowHidden=1 " NERDTree shows hidden files
 map <C-n> :NERDTreeToggle<CR>
 " Close VIM if NERDTree is the last opened window
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" sync open file with NERDTree
+" Check if NERDTree is open or active
+function! IsNERDTreeOpen()        
+return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+endfunction
+" Call NERDTreeFind iff NERDTree is active, current window contains a
+" modifiable file, and we're not in vimdiff
+function! SyncTree()
+if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
+    NERDTreeFind
+wincmd p
+endif
+endfunction
+" Highlight currently open buffer in NERDTree
+autocmd BufEnter * call SyncTree()
+
+" CtrlP settings
+" Ignore files ignored by git
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " TagBar settings
 map <C-m> :TagbarToggle<CR>
