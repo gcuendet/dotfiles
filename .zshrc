@@ -8,6 +8,9 @@ export ZSH=$HOME/.oh-my-zsh
 export PATH=$PATH:/opt/local/bin
 
 # Pyenv virtualenv loading
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
