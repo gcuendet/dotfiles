@@ -13,9 +13,10 @@ fi;
 config checkout
 config config status.showUntrackedFiles no
 
+config submodule update --init --recursive
+
 # Install YouCompleteMe (needs to compile dependencies)
 # ---
-# config submodule update --init --recursive
 # cd ~/.vim/pack/gabriel/start/youcompleteme
 # ./install.py --clang-completer
 
