@@ -20,6 +20,9 @@ config submodule update --init --recursive
 # cd ~/.vim/pack/gabriel/start/youcompleteme
 # ./install.py --clang-completer
 
+# Intall k plugin
+git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
+
 # Install powerline fonts (to use with tmux-config)
 # ---
 cd /tmp
