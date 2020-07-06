@@ -6,7 +6,8 @@ set scrolloff=5
 set history=1000 " Keep 1000 lines of history.
 set ruler " Always show the cursor position.
 set number
-" set relativenumber " Show line numbers relative to cursor where cursor number is always zero.
+set relativenumber " Show line numbers relative to cursor where cursor number is always zero.
+set termguicolors
 
 " OSX stupid backspace fix
 set backspace=indent,eol,start
