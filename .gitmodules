@@ -18,52 +18,52 @@
 	url = https://github.com/samoshkin/tmux-config.git
 [submodule ".vim/pack/gabriel/start/nerdtree"]
 	path = .vim/pack/gabriel/start/nerdtree
-	url = git@github.com:preservim/nerdtree.git
+	url = https://github.com/preservim/nerdtree.git
 [submodule ".vim/pack/gabriel/start/splitjoin"]
 	path = .vim/pack/gabriel/start/splitjoin
 	url = https://github.com/AndrewRadev/splitjoin.vim
 [submodule ".vim/pack/gabriel/start/vim-commentary"]
 	path = .vim/pack/gabriel/start/vim-commentary
-	url = git@github.com:tpope/vim-commentary.git
+	url = https://github.com/tpope/vim-commentary.git
 [submodule ".vim/pack/gabriel/start/vim-gitgutter"]
 	path = .vim/pack/gabriel/start/vim-gitgutter
-	url = git@github.com:airblade/vim-gitgutter.git
+	url = https://github.com/airblade/vim-gitgutter.git
 [submodule ".vim/pack/gabriel/start/tagbar"]
 	path = .vim/pack/gabriel/start/tagbar
-	url = git@github.com:majutsushi/tagbar.git
+	url = https://github.com/majutsushi/tagbar.git
 [submodule ".vim/pack/gabriel/start/tabular"]
 	path = .vim/pack/gabriel/start/tabular
-	url = git@github.com:godlygeek/tabular.git
+	url = https://github.com/godlygeek/tabular.git
 [submodule ".vim/pack/gabriel/start/ctrlp"]
 	path = .vim/pack/gabriel/start/ctrlp
-	url = git@github.com:ctrlpvim/ctrlp.vim.git
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule ".vim/pack/gabriel/start/coc.nvim"]
 	path = .vim/pack/gabriel/start/coc.nvim
-	url = git@github.com:neoclide/coc.nvim.git
+	url = https://github.com/neoclide/coc.nvim.git
 [submodule ".vim/pack/gabriel/start/vim-tmux-navigator"]
 	path = .vim/pack/gabriel/start/vim-tmux-navigator
-	url = git@github.com:christoomey/vim-tmux-navigator.git
+	url = https://github.com/christoomey/vim-tmux-navigator.git
 [submodule ".vim/pack/gabriel/start/vim-devicons"]
 	path = .vim/pack/gabriel/start/vim-devicons
-	url = git@github.com:ryanoasis/vim-devicons.git
+	url = https://github.com/ryanoasis/vim-devicons.git
 [submodule ".vim/pack/gabriel/start/nerdtree-git-plugin"]
 	path = .vim/pack/gabriel/start/nerdtree-git-plugin
-	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
 [submodule ".vim/pack/gabriel/start/vim-airline-themes"]
 	path = .vim/pack/gabriel/start/vim-airline-themes
-	url = git@github.com:vim-airline/vim-airline-themes.git
+	url = https://github.com/vim-airline/vim-airline-themes.git
 [submodule ".vim/pack/gabriel/start/vim-unimpaired"]
 	path = .vim/pack/gabriel/start/vim-unimpaired
-	url = git@github.com:tpope/vim-unimpaired.git
+	url = https://github.com/tpope/vim-unimpaired.git
 [submodule ".vim/pack/gabriel/start/gruvbox"]
 	path = .vim/pack/gabriel/start/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
 [submodule ".vim/pack/gabriel/start/ale"]
 	path = .vim/pack/gabriel/start/ale
-	url = git@github.com:dense-analysis/ale.git
+	url = https://github.com/dense-analysis/ale.git
 [submodule ".vim/pack/gabriel/start/vim-grepper"]
 	path = .vim/pack/gabriel/start/vim-grepper
-	url = git@github.com:mhinz/vim-grepper.git
+	url = https://github.com/mhinz/vim-grepper.git
 [submodule ".vim/pack/gabriel/start/vim-autoformat"]
 	path = .vim/pack/gabriel/start/vim-autoformat
-	url = git@github.com:Chiel92/vim-autoformat.git
+	url = https://github.com/Chiel92/vim-autoformat.git
