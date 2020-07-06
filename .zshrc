@@ -97,7 +97,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="/Applications/MacVim.app/Contents/bin/vim"
+# alias vim="/Applications/MacVim.app/Contents/bin/vim"
 alias ka="k -a"
 alias gs="clear && git status"
 
