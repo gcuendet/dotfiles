@@ -20,12 +20,14 @@ config submodule update --init --recursive
 # cd ~/.vim/pack/gabriel/start/youcompleteme
 # ./install.py --clang-completer
 
-# Intall k plugin
-git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
-
 # Install pyenv
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+
+# Intall k plugin
+export ZSH=$HOME/.oh-my-zsh
+source $ZSH/oh-my-zsh.sh
+git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
 
 # Install powerline fonts (to use with tmux-config)
 # ---
