@@ -103,7 +103,3 @@ alias gs="clear && git status"
 
 alias rfb="rm -rf build/"
 alias mcb="mkdir build && cd build"
-
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
