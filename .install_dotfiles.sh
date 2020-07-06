@@ -25,6 +25,7 @@ git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
 
 # Install pyenv
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 
 # Install powerline fonts (to use with tmux-config)
 # ---
