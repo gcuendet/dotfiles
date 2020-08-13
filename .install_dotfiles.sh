@@ -42,5 +42,10 @@ rm -rf fonts
 # Install tmux-config
 # ---
 cd ~/.tmux-config
+# Patch tmux config for compatibility with tmux 3
+# see https://github.com/samoshkin/tmux-config/pull/31 for details
+curl -L https://patch-diff.githubusercontent.com/raw/samoshkin/tmux-config/pull/31.patch > /tmp/tmuxFix.patch
+git apply /tmp/tmuxFix.patch
+rm /tmp/tmuxFix.patch
 ./install.sh
 
